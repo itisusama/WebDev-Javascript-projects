@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 20px;
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.panel{
+    width: 10%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.panel h3{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+}
+
+.panel.active{
+    width: 30%;
+}
+
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s;
+    transition-delay: 0.5s;
+}
